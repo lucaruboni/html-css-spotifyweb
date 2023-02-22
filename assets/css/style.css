@@ -63,13 +63,18 @@ background-color: var(--dark-grey);
 
 /* #region sidebar */
 
-.nav_bar{
+.sidebar{
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.nav_bar.top, .nav_bar.bottom{
     flex-direction: column;
     justify-content: center;
 }
 
 .top .sidebar{
-    width: 40px;
+    width: 45px;
 }
 
 .icon{
@@ -89,6 +94,18 @@ background-color: var(--dark-grey);
     height: 50px;
     margin: 1.2rem 0;
 }
+
+.circle{
+    height: 35px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: var(--light-grey);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
 
 /* #endregion sidebar */
 
