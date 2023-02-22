@@ -106,6 +106,28 @@ background-color: var(--dark-grey);
     margin-top: 0.5rem;
 }
 
+#add_playlist{
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+.white_head{
+    color: var(--light-white);
+    font-size: 1rem;
+    margin: 0.4rem 0;
+    margin-top: 0.6rem;
+}
+
+.playlist_title{
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.playlist_title .basic_text{
+    align-self: flex-start;
+}
 
 /* #endregion sidebar */
 
