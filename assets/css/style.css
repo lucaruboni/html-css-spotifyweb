@@ -4,3 +4,162 @@
     padding: 0;
 }
 
+:root{
+    --dark-black-: #000;
+    --dark-grey: #484848;
+    --transp-black: #000000ce;
+    --light-white: #ffffff;
+    --light-grey: #6d6d6d;
+}
+
+.flexbox{
+    display: flex;
+}
+
+i{
+    color: var(--light-white);
+}
+
+a{
+    text-decoration: none;
+}
+
+#font{
+    font-family: 'Circular Std', sans-serif;
+}
+
+.basic_text{
+    display: none;
+    color: var(--light-grey);
+    font-size: 0.8rem;
+    font-weight: 200;
+    align-self: center;
+    margin-left: 0.4rem;
+}
+
+/* #region debug */
+
+.side_debug{
+    background-color: var(--dark-black-);
+}
+
+
+
+
+.foot_debug{
+background-color: var(--dark-grey);
+}
+
+.md_lg_display{
+    display: none;
+}
+
+
+
+
+/* #endregion debug */
+
+
+
+/* #region sidebar */
+
+.nav_bar{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top .sidebar{
+    width: 40px;
+}
+
+.icon{
+    width: 25px;
+    margin-bottom: 0.5rem;
+}
+
+.centered_icon{
+    justify-content: center;
+}
+
+.sm_logo{
+    margin-top: 0.5rem;
+}
+
+.md_logo.lg_logo{
+    height: 50px;
+    margin: 1.2rem 0;
+}
+
+/* #endregion sidebar */
+
+
+/* #region content */
+
+.content_container{
+    flex-direction: column;
+}
+
+.top .content_container{
+    height: calc(100vh - 85px);
+    width: calc(100% - 40px);
+
+}
+
+.banner{
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 85px;
+    width: 100%;
+    background-color: var(--transp-black);
+}
+
+
+
+
+/* #endregion content */
+
+/* region footer */
+
+.foot_container{
+    height: 85px;
+}
+
+
+
+/* #endregion footer */
+
+
+/* #region media query */
+
+@media screen and (min-width: 768px) {
+    .top .sidebar{
+        width: 200px;
+    }
+
+    .top .content_container{
+        width: calc(100% - 200px);
+    }
+
+    .centered_icon{
+        justify-content: flex-start;
+        margin-left: 0.6rem;
+    }
+
+    .sm_logo{
+        display: none;
+    }
+
+
+
+    .md_lg_display{
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1154px) {
+    
+}
+
+
+/* #endregion media query */

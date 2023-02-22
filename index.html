@@ -4,21 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/circular-std" rel="stylesheet">
     <title>Spotify bool</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <main class="app_main">
-        <div class="top">
-            <section class="sidebar"></section>
+    <main id="font" class="app_main">
+        <div class="top flexbox">
+            <section class="sidebar side_debug">
+                <div class="nav_bar flexbox">
+                    <a href="#" class="centered_icon flexbox">
+                    <img class="icon sm_logo" src="./assets/img/logo-small.svg" alt="spotify logo">
+                    <img class="md_logo lg_logo md_lg_display" src="./assets/img/logo.svg" alt="spotify logo">
+                    </a>
+                    <a href="#" class="centered_icon flexbox">
+                    <img class="icon" src="./assets/img/home.svg" alt="home">
+                    <h2 class="basic_text md_lg_display">
+                        Home
+                    </h2>
+                    </a>
+                    <a href="#" class="centered_icon flexbox">
+                    <img class="icon" src="./assets/img/search.svg" alt="search">
+                    <h2 class="basic_text md_lg_display">
+                        Cerca
+                    </h2>
+                    </a>
+                    <a href="#" class="centered_icon flexbox">
+                    <img class="icon" src="./assets/img/libreria.svg" alt="library">
+                    <h2 class="basic_text md_lg_display">
+                        La tua libreria
+                    </h2>
+                    </a>
+                </div>
+            </section>
             <!-- /.sidebar -->
-            <section class="content"></section>
+            <section class="content_container flexbox">
+                
+                <div class="content flexbox">
+                    <div class="banner"></div>
+                    <div class="square"></div>
+                </div>
+
+            </section>
             <!-- /.content -->
         </div>
         <!-- /.top -->
     </main>
     <!-- /.app_main -->
-    <footer class="app_footer"></footer>
+    <footer class="app_footer">
+        <section class="foot_container foot_debug"></section>
+    </footer>
     <!-- /.app_footer -->
 </body>
 </html>
