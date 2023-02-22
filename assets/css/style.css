@@ -6,10 +6,12 @@
 
 :root{
     --dark-black-: #000;
-    --dark-grey: #484848;
+    --deep-grey: #484848;
     --transp-black: #000000ce;
     --light-white: #ffffff;
     --light-grey: #6d6d6d;
+    --deep-blue: #080b12;
+    --dark-grey: #141922;
 }
 
 .flexbox{
@@ -22,6 +24,12 @@ i{
 
 a{
     text-decoration: none;
+}
+
+hr{
+    width: 90%;
+    margin: auto;
+    border-color: var(--deep-grey);
 }
 
 #font{
@@ -37,17 +45,31 @@ a{
     margin-left: 0.4rem;
 }
 
+.row{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+}
+
+
+
+.white_head{
+    color: var(--light-white);
+    font-size: 1rem;
+    margin: 0.4rem 0;
+    margin-top: 0.6rem;
+}
+
 /* #region debug */
 
-.side_debug{
-    background-color: var(--dark-black-);
-}
+
 
 
 
 
 .foot_debug{
-background-color: var(--dark-grey);
+background-color: var(--deep-grey);
 }
 
 .md_lg_display{
@@ -66,6 +88,7 @@ background-color: var(--dark-grey);
 .sidebar{
     justify-content: space-between;
     flex-direction: column;
+    background-color: var(--dark-black-);
 }
 
 .nav_bar.top, .nav_bar.bottom{
@@ -111,12 +134,7 @@ background-color: var(--dark-grey);
     display: inline-block;
 }
 
-.white_head{
-    color: var(--light-white);
-    font-size: 1rem;
-    margin: 0.4rem 0;
-    margin-top: 0.6rem;
-}
+
 
 .playlist_title{
     flex-direction: column;
@@ -134,15 +152,36 @@ background-color: var(--dark-grey);
 
 /* #region content */
 
-.content_container{
+.content{
     flex-direction: column;
 }
 
 .top .content_container{
     height: calc(100vh - 85px);
     width: calc(100% - 40px);
+    flex-direction: column;
+    background-color: var(--dark-grey);
 
 }
+
+.white_head.xl{
+    font-size: 1.4rem;
+}
+
+.content_nav{
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+ 
+.content_type{
+    color: var(--deep-grey);
+    
+}
+
+                   /* BANNER */
 
 .banner{
     position: sticky;
@@ -150,11 +189,23 @@ background-color: var(--dark-grey);
     left: 0;
     height: 85px;
     width: 100%;
-    background-color: var(--transp-black);
+    background-color: var(--deep-blue);
+    justify-content: flex-end;
+}
+
+#upgrade_text{
+    color: var(--light-white);
+    align-self: center;
+    font-size: 0.6rem;
+    margin-right: 1rem;
+    border: 1px var(--light-white) solid;
+    padding: 0.4rem 1rem;
+    border-radius: 40px;
 }
 
 
-
+                /* /BANNER */
+                      
 
 /* #endregion content */
 
