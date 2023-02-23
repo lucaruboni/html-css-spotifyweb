@@ -248,22 +248,19 @@ background-color: var(--deep-grey);
 }
 
 .artist{
-    border-radius: 50%;
     width: 100%;
     aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-image: url(../img/doomcheesejpg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     
 }
 
-#doom{
-    background-image: url(../img/doomcheesejpg.jpg);
-}
-
 #jay{
-    background-image: url(../img/screeming.jpg);
-}
+    background-image: url(../img/screamin.jpg);
 
+}
 
                 /* /BANNER */
                       
