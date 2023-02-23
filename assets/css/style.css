@@ -202,7 +202,7 @@ background-color: var(--deep-grey);
 
 .row_2{
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 2rem;
@@ -246,12 +246,14 @@ background-color: var(--deep-grey);
 
 /* region footer */
 
-.foot_container{
+.app_footer{
     position: sticky;
     bottom: 0;
     left: 0;
-    height: 85px;
+}
 
+.foot_container{
+    height: 85px;
 }
 
 
@@ -288,10 +290,19 @@ background-color: var(--deep-grey);
     .white_head.xl{
         font-size: 1.4rem;
     }
+
+ 
 }
 
 @media screen and (min-width: 1154px) {
-    
+ 
+    .row_2{
+        justify-content: initial;
+    }
+
+    .col_12{
+        width: calc(100% / 12 * 2);
+    }
 }
 
 
