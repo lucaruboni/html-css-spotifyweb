@@ -172,6 +172,7 @@ background-color: var(--deep-grey);
 
 .content{
     flex-direction: column;
+    height: 100%;
 }
 
 .top .content_container{
