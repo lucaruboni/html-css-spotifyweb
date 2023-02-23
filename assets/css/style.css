@@ -32,6 +32,10 @@ hr{
     border-color: var(--deep-grey);
 }
 
+img{
+    max-width: 100%;
+}
+
 #font{
     font-family: 'Circular Std', sans-serif;
 }
@@ -50,6 +54,7 @@ hr{
     flex-direction: column;
     width: 95%;
     margin: auto;
+    overflow-y: auto;
 }
 
 
@@ -60,6 +65,19 @@ hr{
     margin: 0.4rem 0;
     margin-top: 0.6rem;
 }
+
+
+
+.col_12{
+    width: calc(100% / 12 * 4);
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+
+
+
 
 /* #region debug */
 
@@ -165,7 +183,7 @@ background-color: var(--deep-grey);
 }
 
 .white_head.xl{
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .content_nav{
@@ -178,7 +196,24 @@ background-color: var(--deep-grey);
  
 .content_type{
     color: var(--deep-grey);
+    font-size: 0.7rem;
     
+}
+
+.row_2{
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.card.flexbox{
+    flex-direction: column;
+}
+
+.album_title{
+    color: var(--deep-grey);
+    font-size: 0.8rem;
 }
 
                    /* BANNER */
@@ -212,7 +247,11 @@ background-color: var(--deep-grey);
 /* region footer */
 
 .foot_container{
+    position: sticky;
+    bottom: 0;
+    left: 0;
     height: 85px;
+
 }
 
 
@@ -244,6 +283,10 @@ background-color: var(--deep-grey);
 
     .md_lg_display{
         display: inline-block;
+    }
+
+    .white_head.xl{
+        font-size: 1.4rem;
     }
 }
 
