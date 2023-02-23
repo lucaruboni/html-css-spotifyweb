@@ -12,6 +12,7 @@
     --light-grey: #6d6d6d;
     --deep-blue: #080b12;
     --dark-grey: #141922;
+    --foot-grey: #282828;
 }
 
 .flexbox{
@@ -36,7 +37,7 @@ img{
     max-width: 100%;
 }
 
-#font{
+.font{
     font-family: 'Circular Std', sans-serif;
 }
 
@@ -79,10 +80,16 @@ img{
     width: calc(100% / 12 * 4);
 }
 
+.col_2{
+    width: calc(100% / 12 * 2);
+}
 
 .ml{
-  width: 90%;
-  margin: auto;
+ align-self: center;
+}
+
+.md_lg_display{
+    display: none;
 }
 
 
@@ -93,13 +100,7 @@ img{
 
 
 
-.foot_debug{
-background-color: var(--deep-grey);
-}
 
-.md_lg_display{
-    display: none;
-}
 
 
 
@@ -183,7 +184,7 @@ background-color: var(--deep-grey);
 }
 
 .top .content_container{
-    height: calc(100vh - 85px);
+    height: calc(100vh - 65px);
     width: calc(100% - 40px);
    
     background-color: var(--dark-grey);
@@ -221,7 +222,7 @@ background-color: var(--deep-grey);
 }
 
 .album_title{
-    color: var(--deep-grey);
+    color: var(--light-grey);
     font-size: 0.8rem;
 }
 
@@ -276,15 +277,72 @@ background-color: var(--deep-grey);
 }
 
 .foot_container{
-    height: 85px;
+    height: 65px;
+    background-color: var(--foot-grey);
 }
 
+.row_foot{
+    display: flex;
+    margin: 0.5rem 1rem;
+}
+
+.left_text_container{
+    flex-direction: column;
+    margin-left: 0.5rem;
+
+
+}
+
+.white_head_footer{
+    font-size: 0.9rem;
+    color: var(--light-white);
+}
+
+
+
+.song_info{
+    font-size: 0.6rem;
+    color: var(--light-grey);
+}
 
 
 /* #endregion footer */
 
 
 /* #region media query */
+
+@media screen and (min-width: 500px) {
+    .top .sidebar{
+        width: 200px;
+    }
+
+    .top .content_container{
+        width: calc(100% - 200px);
+    }
+
+    .centered_icon{
+        justify-content: flex-start;
+        margin-left: 0.6rem;
+    }
+
+    .sm_logo{
+        display: none;
+    }
+
+    .col_4_s{
+        width: calc(100% / 12 * 4);
+    }
+
+    .md_lg_display{
+        display: inline-block;
+    }
+
+    .white_head.xl{
+        font-size: 1.4rem;
+    }
+
+}
+
 
 @media screen and (min-width: 768px) {
     .top .sidebar{
@@ -304,8 +362,9 @@ background-color: var(--deep-grey);
         display: none;
     }
 
-    .col_4_md{
-        width: calc(100% / 12 * 4);
+    .col_2_md{
+        width: calc(100% / 12 * 2);
+        margin-right: 2rem;
     }
 
     .md_lg_display{
@@ -316,17 +375,39 @@ background-color: var(--deep-grey);
         font-size: 1.4rem;
     }
 
- 
+    .row_2{
+        justify-content: initial;
+        gap: 0;
+    }
+
+    .card.flexbox{
+        margin-bottom: 2rem;
+    }
+
+    .ml{
+        align-self: initial;
+    }
 }
 
 @media screen and (min-width: 1154px) {
  
     .row_2{
         justify-content: initial;
+        gap: 0;
     }
 
-    .col_2_lg{
-        width: calc(100% / 12 * 2);
+    .card.flexbox{
+        margin-bottom: 2rem;
+    }
+
+    .col_lg{
+        width: 15%;
+        margin: 0.5rem;
+        flex-shrink: 10%;
+    }
+
+    .ml{
+        align-self: initial;
     }
 }
 
