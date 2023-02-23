@@ -243,7 +243,7 @@ img{
     color: var(--light-white);
     align-self: center;
     font-size: 0.6rem;
-    margin-right: 1rem;
+    margin-right: 5rem;
     border: 1px var(--light-white) solid;
     padding: 0.4rem 1rem;
     border-radius: 40px;
