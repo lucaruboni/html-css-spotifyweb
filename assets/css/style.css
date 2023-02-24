@@ -265,6 +265,10 @@ img{
 
 }
 
+.link_container{
+    flex-direction: column;
+}
+
                 /* /BANNER */
                       
 
@@ -282,27 +286,29 @@ img{
     height: 65px;
     background-color: var(--foot-grey);
     justify-content: space-between;
+
 }
 
 .row_foot{
     display: flex;
     margin: 0.5rem 1rem;
     justify-content: space-between;
+
 }
 
 .foot_left{
     margin-top: 0.6rem;
+    margin-left: 1rem;
+    margin-bottom: 0.6rem;
 }
 
 .left_text_container{
     flex-direction: column;
     margin-left: 0.5rem;
-
-
 }
 
 .white_head_footer{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--light-white);
 }
 
@@ -346,6 +352,10 @@ img{
 .foot_right{
     align-items: center;
     gap: 0.6rem;
+    margin-right: 1rem;
+}
+.foot_right.xs_position{
+    display: none;
 }
 /* #endregion footer */
 
@@ -381,6 +391,7 @@ img{
     .white_head.xl{
         font-size: 1.4rem;
     }
+
 
 }
 
@@ -453,12 +464,48 @@ img{
 }
 
 
+@media screen and (max-width: 500px) {
+    .xs_display{
+        display: none;   
+    }
+
+    .white_head_footer{
+        font-size: 0.5rem;
+        align-self: center;
+        margin-top: 45%;
+    }
+
+    .foot_right.xs_position{
+        display: flex;
+    }
+
+    .progression{
+        display: none;
+    }
+
+    .xs_position_container{
+        display: none;
+    }
+
+    .xs_position{
+        display: flex;
+        justify-content: center;
+        width: 15%;
+    }
+
+    .xs_position_element{
+        display: inline-block;
+        align-items: center;
+    }
+
+
+}
 /* #endregion media query */
 
 /* #region effects and transition */
 
 .content .col_12{
-    transition: all 0.5s linear;
+    transition: all 0.09s linear;
 }
 
 .img_container{
@@ -477,7 +524,7 @@ img{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
-    transition: all 0.5s linear;
+    
     
 
 }
@@ -494,6 +541,24 @@ img{
 .color_hov:hover{
     color: var(--light-white);
 }
+
+.under_bar{
+    height: 5px;
+    width: 80%;
+    margin: auto;
+    background-color: var(--light-green);
+    display: none;
+}
+
+.link_container.flexbox:hover .under_bar{
+    display: inline-block;
+}
+
+.bord_bottom:hover{
+    display: inline-block;
+}
+
+
 
 .progression:hover{
     border-color: var(--light-green);
@@ -514,6 +579,28 @@ img{
 .progression:hover .circle_prog{
     display: inline-block;
 
+}
+
+
+.banner.flexbox:hover #upgrade_text{
+    font-size: 0.8rem;
+}
+
+.icon_grow:hover{
+    font-size: large;
+}
+
+.song_info:hover{
+    text-decoration: underline;
+}
+
+.foot_left #playing_now{
+    transition: all 0.09s linear
+}
+
+
+#playing_now:hover{
+    filter: blur(1px);
 }
 
     /* #end region effects and transition */
