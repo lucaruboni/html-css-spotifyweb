@@ -530,7 +530,7 @@ img{
 }
 
 .card.flexbox:hover .white_head, .album_title{
-    font-size: calc(100% + 0.3rem);
+    font-size: calc(70% + 0.1rem)
 }
 
 .img_container:hover #play_btn{
@@ -602,5 +602,10 @@ img{
 #playing_now:hover{
     filter: blur(1px);
 }
+
+.icon.icon_hov:hover{
+    width: calc(80% + 1%);
+}
+
 
     /* #end region effects and transition */
