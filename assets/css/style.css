@@ -604,7 +604,7 @@ img{
 }
 
 .icon.icon_hov:hover{
-    width: calc(80% + 1%);
+    flex-grow: 0.1;
 }
 
 
